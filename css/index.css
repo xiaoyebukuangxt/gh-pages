@@ -1,0 +1,480 @@
+body,div,ol,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,form,fieldset,legend,input{ margin:0; padding:0;}
+body.all{
+    width: 100%;
+}
+
+ h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #000;
+}
+body{
+    font-family: "PingFang Regular", 微软雅黑;
+    color: rgb(143, 152, 159);
+    list-style: none;
+}
+/*顶部*/
+.all .top{
+    width: 100%;
+    /*height: 77px;*/
+    background-color: #f00;
+}
+.top nav{
+    height: 77px;
+    /*padding: 10px 70px;*/
+}
+.top nav .container-fluid{
+    height: 57px;
+    padding-top:9px;
+    padding-left:85px;
+}
+.navbar-collapse .navbar-nav{
+    margin-right:70px;
+}
+.top .navbar-logo{
+    width: 147px;
+    height: 50px;
+    margin-top:-14px;
+}
+.oldVersion{
+    line-height: 57px;
+    text-decoration: none;
+    color: #999;
+}
+.oldVersion:hover,
+.oldVersion:focus{
+    color: #3c98f6
+}
+.navbar-collapse li a {
+    color: rgba(0,0,0,.6);
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+}
+/*汉堡菜单点击,让文字居中*/
+@media screen and (max-width:768px) {
+    .xs_center{
+        text-align: center;
+        background-color: #fff;
+        width: 100%;
+    }
+}
+
+/*中间 content1*/
+#content{
+    width: 100%;
+    position: relative;
+    background-color: #e6e6e6;
+}
+#content .bg{
+    height: 900px;
+    /*background: url("../images/bg.jpg");*/
+    background-position: center;
+    background-size: cover;
+
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.bg_content{
+    position: absolute;
+    top: 35%;
+}
+
+.bg_content .content_text1 span{
+    width: 100%;
+    font-size:58px;
+    color: #fff;
+    font-weight:400;
+    margin-bottom:28px;
+    letter-spacing: .2em;
+}
+.bg_content .content_text2{
+    margin-bottom: 10px;
+    font-size: 17px;
+    letter-spacing: .1em;
+    color: #fff;
+}
+.bg_content .content_text3{
+    color: #fff;
+}
+.QR{
+    width: 100%;
+    height: 72px;
+    margin-top:45px;
+    /*background-color: #f00;*/
+}
+.QR .QR_left,.QR .QR_right{
+    display: inline-block;
+    width: 200px;
+    height: 100%;
+    border: 2px solid #fff;
+    box-shadow: 0 3px 6px -1px rgba(0,0,0,.19);
+    border-radius:100px;
+    padding: 15px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+.QR .QR_right{
+    margin-left:30px;
+}
+.fp-dowload-img {
+    width: 70%;
+    height: 100%;
+    display: block;
+    margin: auto;
+    padding: 5px 0;
+}
+.QR a:hover{
+    border: 2px solid #0f0;
+}
+.hide_left{
+    position: absolute;
+    top: -55px;
+    left: -215px;
+    background: url("../images/weixinerweima.png");
+    background-size:100% 100%;
+    width: 196.5px!important;
+    height: 183px;
+    display: none;
+    transform: rotate(90deg);
+}
+.hide_right{
+    position: absolute;
+    top: -55px;
+    right: -215px;
+    background: url("../images/weixinerweima.png");
+    background-size:100% 100%;
+    width: 196.5px!important;
+    height: 183px;
+    display: none;
+    transform: rotate(-90deg);
+
+}
+/*借用类名*/
+.toggleClass{
+    display: block;
+}
+/*services部分*/
+#services{
+    width: 100%;
+    padding-top: 50px;
+}
+#services .container{
+    /*height: 300px;*/
+}
+@media screen and (min-width:1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+@media screen and (min-width:970px) and (max-width:1200px) {
+    .container{
+        width: 970px;
+    }
+}
+@media screen and (min-width:750px) and (max-width:970px) {
+    .container{
+        width: 750px;
+    }
+}
+@media screen and (max-width:750px) {
+    .container{
+        width: 100%;
+    }
+}
+
+#services .icon{
+
+}
+#services .icon .circle-div{
+    margin:0 auto;
+    width: 130px;
+    height: 130px;
+    border-radius: 65px;
+    background: #3c98f6;
+    position: relative;
+
+}
+#services .col-md-4{
+    height: 301px;
+}
+#services .icon .circle-div img{
+    display: inline-block;
+    width: 30px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    margin-left:-15px;
+}
+#services .icon .cir_text h3{
+    font-size:20px;
+    margin: 15px 0;
+}
+#services .icon .cir_text div{
+    font-size:16px;
+}
+
+.delay01{
+    animation-delay: 0.1s;
+    animation-duration: 0.5s;
+}
+.delay02{
+    animation-delay: 0.2s;
+    animation-duration: 0.5s;
+}
+
+/*步骤*/
+#buzhou .buzhou_bg{
+    width: 100%;
+    height: 392px;
+    background: url("../images/buzhou.jpg") no-repeat;
+    background-size: cover;
+}
+
+#buzhou .buzhou_bg .container .title{
+    color: #fff;
+    font-size: 21px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    letter-spacing: .3em;
+}
+#buzhou .buzhou_bg .container .title span:first-child{
+    font-size: 30px;
+}
+
+#buzhou .buzhou_bg .box-services{
+    position: relative;
+    margin: 0 30px 70px 20px;
+}
+#buzhou .buzhou_bg .box-services .box-icon{
+    margin-bottom:15px;
+}
+#buzhou .buzhou_bg .box-services .box-icon .box-circle{
+    width: 190px;
+    height: 190px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+#buzhou .buzhou_bg .box-services .box-icon .box-circle img:nth-child(1){
+    display: block;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+#buzhou .buzhou_bg .box-services .box-icon .box-circle img:nth-child(2){
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 50px!important;
+    left: 140%!important;
+}
+
+/*展示*/
+#zhanshi .container .photo{
+    position: relative;
+}
+#zhanshi .container .photo img{
+    width: 239px;
+    height: 443px;
+    display: inline-block;
+    margin-top: 40px;
+    margin-right: 35px;
+    margin-left: 20%;
+}
+#zhanshi .container .text{
+    display: inline-block;
+    font-size: 16px;
+    position: relative;
+    top: 55px;
+    line-height: 30px;
+    letter-spacing: .1em;
+}
+#zhanshi .container .text .title{
+    color: #000;
+    font-size:21px;
+}
+#zhanshi .container .text .content3{
+    margin-top: 20px;
+}
+
+/*评价*/
+#evaluate{
+    background-color: #efefef;
+    padding: 8em 0;
+}
+
+#evaluate h2{
+
+    font-weight: 400;
+    position: relative;
+    padding-bottom: 10px;
+    line-height: 1.5;
+    letter-spacing: .1em;
+}
+#evaluate  .title{
+    color: #000;
+    font-size:21px;
+    margin: 0 0 70px 0;
+}
+#evaluate .bubble{
+    padding: 30px;
+    margin-bottom: 20px;
+    background: #3c98f6;
+    position: relative;
+    border-radius: 30px;
+}
+
+#evaluate .bubble  p{
+    color: #fff;
+    font-size: 16px;
+    margin:0 10px;
+    margin-bottom:1.5em;
+    text-align: left;
+}
+#evaluate .bubble:after{
+    position: absolute;
+    bottom: -10px;
+    left: 30px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #3c98f6 transparent transparent transparent;
+}
+#evaluate .fb_bg{
+    width: 75px;
+    height: 75px;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+#evaluate span{
+    float: left;
+    font-size: 18px;
+    color: #000;
+    margin: 0;
+}
+
+/*关于我们*/
+#about{
+    padding-bottom:50px;
+}
+#about .heading h2{
+
+    color: #000;
+    margin: 30px 0 30px 0;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .1em;
+    padding-bottom: 10px;
+}
+#about .first_head h3{
+    font-size: 16px;
+    letter-spacing: .1em;
+    padding-bottom: 40px;
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #8f989f;
+    position: relative;
+    display: block;
+}
+#about .first_head1 h3{
+    font-size: 16px;
+    letter-spacing: .1em;
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #8f989f;
+    position: relative;
+    display: block;
+}
+/*底部*/
+#bottom{
+    background: #41444b;
+    color: rgba(255,255,255,.6);
+}
+#bottom .contact{
+    margin-top: 50px;
+}
+#bottom h3{
+    font-size: 22px;
+    color: #fff;
+    position: relative;
+    padding-bottom: 20px;
+}
+#bottom .contact_msg{
+    margin: 0 0 60px 0;
+}
+#bottom .contact_msg li{
+    font-size: 16px;
+    list-style: none;
+    margin: 0 0 20px 0;
+    position: relative;
+    color: #fff;
+}
+
+
+#bottom .contact_msg li img{
+    width: 22px;
+    margin-right: 12px;
+    display: inline-block;
+
+}
+#bottom .contact p img{
+    width: 140px;
+}
+#bottom .contact .logo1,#bottom .contact .logo2{
+    margin-right: 1px;
+    display: inline-block;
+    font-size: 24px;
+}
+
+#bottom .contact .logo2 img:last-child{
+    /*display: none;*/
+    width: 183px;
+    height: 196px;
+    position: absolute;
+    top: inherit;
+    left: -13px;
+    margin-top: 5px;
+    display: none;
+}
+
+#bottom .finally{
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+#bottom .banben{
+    font-size: 12px;
+    line-height: 35px;
+}
+#bottom .shangbiao{
+    margin-top: 15px;
+}
+
+
+#bottom .shangbiao a{
+    margin-right: 10px;
+    text-decoration: none;
+    line-height: 35px;
+}
+
